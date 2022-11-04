@@ -1,0 +1,25 @@
+body {
+    max-width: 70%;
+    margin: auto;
+    font-family: Arial;
+}
+.container{
+    padding-top: 5rem;
+}
+
+.contF1 {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial;
+}
+
+.buttonF1 {
+    font-size: 4rem;
+}
+
+/* -- Title of site --  */
+.mainTitleF1{
+    display: flex;
+    justify-content: space-between;
+}
