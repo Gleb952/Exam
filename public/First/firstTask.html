@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Style/Style.css">
     <title>Document</title>
 </head>
 
@@ -30,46 +30,8 @@
     </div>
 
     <br>
-    <style>
-        #myBar {
-            width: 1px;
-            height: 30px;
-            background-color: #04AA6D;
-        }
-    </style>
-    <script>
-        var i = 0;
 
-        function move() {
-            if (i == 0) {
-                i = 1;
-                var elem = document.getElementById("myBar");
-                var width = 1;
-                var id = setInterval(frame, 2100);
-
-                function frame() {
-                    if (width >= 100) {
-                        clearInterval(id);
-                        i = 0;
-                    } else {
-                        width++;
-                        elem.style.width = width + "%";
-                    }
-                }
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", move);
-
-
-
-
-
-
-        setTimeout(function () {
-            window.location.href = "T2.html";
-        }, 210000);
-    </script>
+    <script src="Style/Style.js"></script>
 </body>
 
 </html>
