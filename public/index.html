@@ -19,13 +19,22 @@
 
 
     <div class="container contF1">
-        
+        <p></p>
         <input class="inputF1" type="text" placeholder="Введите идентификатор">
         <a class="btn btn-outline-primary buttonF1" href="First/T1.html">Start</a>
 
     </div>
 
+    <script>
+        body = document.querySelector('body');
 
+        var para = document.querySelector('p');
+
+        if ($(window).width() <= '1000'){
+            para.textContent = 'Сегодня';
+
+        }
+    </script>
 </body>
 
 </html>
