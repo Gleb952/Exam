@@ -30,9 +30,11 @@
 
         var para = document.querySelector('p');
 
-        if ($(window).width() <= '1000'){
+        if (document.documentElement.clientWidth <= '1000') {
             para.textContent = 'Сегодня';
 
+        } else {
+            alert('hi');
         }
     </script>
 </body>
