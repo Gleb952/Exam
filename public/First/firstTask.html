@@ -21,8 +21,15 @@
         бар
     </div>
     <div>
-        <h2 id="">Задача</h2>
-        <p id="">текст задачи</p>
+        <audio src="../mp3\9520.mp3" autoplay="autoplay"></audio>
+        <button onclick="soundClick()">Кликни по этому тексту</p>
+        <script>
+            function soundClick() {
+                var audio = new Audio(); // Создаём новый элемент Audio
+                audio.src = 'click.mp3'; // Указываем путь к звуку "клика"
+                audio.autoplay = true; // Автоматически запускаем
+            }
+        </script>
     </div>
 
     <div id="myProgress">
