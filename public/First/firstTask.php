@@ -15,23 +15,30 @@
 </head>
 
 <body>
-    <div class="container">
+    <h1 class="entry-title">Английский ОГЭ</h1>
 
-        <h1 class="entry-title">Английский ОГЭ</h1>
-        <!-- 10 sek -->
-
-        <div>
-            <p>Время подготовки – 1,5 минуты</p>
-            <p>Время ответа – 2 минуты</p>
-            <p>Максимальная оценка – 2 балла</p>
-        </div>
+    <div>
     </div>
-    <script>
-        setTimeout(function () {
-            window.location.href = "firstTask.html";
-        }, 10000);
-    </script>
+    <div>
+        
+        <audio src="../mp3/9520.mp3" autoplay="autoplay"></audio>
+        <p onclick="soundClick()"></p>
+        <script>
+            function soundClick() {
+                var audio = new Audio(); 
+                audio.src = 'click.mp3'; 
+                audio.autoplay = true; 
+            }
+        </script>
+    </div>
 
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+
+    <br>
+
+    <script src="Style/Style.js"></script>
 </body>
 
 </html>

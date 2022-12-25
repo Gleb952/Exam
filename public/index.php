@@ -25,27 +25,29 @@
 
     </div>
     <?php
-$conn = new mysqli("localhost", "eng_bd", "5]u1n(69Q7HIO!*u", "eng_bd");
-if($conn->connect_error){
-    die("Ошибка: " . $conn->connect_error);
-}
-$sql = "SELECT * FROM eng_basetask";
-if($result = $conn->query($sql)){
-    $rowsCount = $result->num_rows; // количество полученных строк
-    echo "<p>Получено объектов: $rowsCount</p>";
-    echo "<table><tr><th>Id</th><th>Имя</th></tr>";
-    foreach($result as $row){
-        echo "<tr>";
-            echo "<td>" . $row["id"] . "</td>";
-            echo "<td>" . $row["name"] . "</td>";
-        echo "</tr>";
-    }
-    echo "</table>";
-    $result->free();
-} else{
-    echo "Ошибка: " . $conn->error;
-}
-$conn->close();
+        $conn = new mysqli("localhost", "eng_bd", "5]u1n(69Q7HIO!*u", "eng_bd");
+        
+            if($conn->connect_error){
+                die("Ошибка: " . $conn->connect_error);
+                    }
+
+            $sql = "SELECT * FROM eng_basetask";
+            if($result = $conn->query($sql)){
+                $rowsCount = $result->num_rows; 
+                echo "<p>Получено объектов: $rowsCount</p>";
+                echo "<table><tr><th>Id</th><th>Имя</th></tr>";
+                foreach($result as $row){
+                    echo "<tr>";
+                        echo "<td>" . $row["id"] . "</td>";
+                        echo "<td>" . $row["name"] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+                $result->free();
+            } else{
+                echo "Ошибка: " . $conn->error;
+            }
+            $conn->close();
 
 
        

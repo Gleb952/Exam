@@ -15,30 +15,23 @@
 </head>
 
 <body>
-    <h1 class="entry-title">Английский ОГЭ</h1>
+    <div class="container">
 
-    <div>
-        бар
+        <h1 class="entry-title">Английский ОГЭ</h1>
+        <!-- 10 sek -->
+
+        <div>
+            <p>Время подготовки – 1,5 минуты</p>
+            <p>Время ответа – 2 минуты</p>
+            <p>Максимальная оценка – 7 балла</p>
+        </div>
     </div>
-    <div>
-        <audio src="../mp3\9520.mp3" autoplay="autoplay"></audio>
-        <button onclick="soundClick()">Кликни по этому тексту</p>
-        <script>
-            function soundClick() {
-                var audio = new Audio(); // Создаём новый элемент Audio
-                audio.src = 'click.mp3'; // Указываем путь к звуку "клика"
-                audio.autoplay = true; // Автоматически запускаем
-            }
-        </script>
-    </div>
+    <script>
+        setTimeout(function () {
+            window.location.href = "TgirdTask.php";
+        }, 10000);
+    </script>
 
-    <div id="myProgress">
-        <div id="myBar"></div>
-    </div>
-
-    <br>
-
-    <script src="Style/Style.js"></script>
 </body>
 
 </html>

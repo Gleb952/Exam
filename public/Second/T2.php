@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="Style/T2.css">
     <title>Document</title>
 </head>
-
 <body>
     <div class="container">
 
@@ -21,17 +19,16 @@
         <!-- 10 sek -->
 
         <div>
-            <p>Время подготовки – 1,5 минуты</p>
-            <p>Время ответа – 2 минуты</p>
-            <p>Максимальная оценка – 7 балла</p>
+            <p>Время подготовки – 0 минуты</p>
+            <p>Время ответа – 40 сек</p>
+            <p>Максимальная оценка – 6 баллов</p>
         </div>
     </div>
     <script>
         setTimeout(function () {
-            window.location.href = "TgirdTask.html";
+            window.location.href = "secondTask.php";
         }, 10000);
     </script>
-
+    
 </body>
-
 </html>

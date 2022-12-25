@@ -27,5 +27,5 @@ document.addEventListener("DOMContentLoaded", move);
 
 
 setTimeout(function () {
-    window.location.href = "../Second/T2.html";
+    window.location.href = "../Second/T2.php";
 }, 210000);v
