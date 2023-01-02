@@ -21,35 +21,15 @@
     <div class="container contF1">
         <p></p>
         <input class="inputF1" type="text" placeholder="Введите идентификатор">
-        <a class="btn btn-outline-primary buttonF1" href="First/T1.html">Start</a>
+        <a class="btn btn-outline-primary buttonF1" href="First/T1.php">Start</a>
 
     </div>
     <?php
-        $conn = new mysqli("localhost", "eng_bd", "5]u1n(69Q7HIO!*u", "eng_bd");
-        
-            if($conn->connect_error){
-                die("Ошибка: " . $conn->connect_error);
-                    }
-
-            $sql = "SELECT * FROM eng_basetask";
-            if($result = $conn->query($sql)){
-                $rowsCount = $result->num_rows; 
-                echo "<p>Получено объектов: $rowsCount</p>";
-                echo "<table><tr><th>Id</th><th>Имя</th></tr>";
-                foreach($result as $row){
-                    echo "<tr>";
-                        echo "<td>" . $row["id"] . "</td>";
-                        echo "<td>" . $row["name"] . "</td>";
-                    echo "</tr>";
-                }
-                echo "</table>";
-                $result->free();
-            } else{
-                echo "Ошибка: " . $conn->error;
-            }
-            $conn->close();
-
-
+      
+      require  '../service_bd\services.php';
+      $foo = new Foo();
+      $func = array(new  Foo, "get_data");
+      $func();
        
     ?>
 

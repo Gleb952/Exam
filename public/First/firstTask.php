@@ -20,14 +20,14 @@
     <div>
     </div>
     <div>
-        
+
         <audio src="../mp3/9520.mp3" autoplay="autoplay"></audio>
         <p onclick="soundClick()"></p>
         <script>
             function soundClick() {
-                var audio = new Audio(); 
-                audio.src = 'click.mp3'; 
-                audio.autoplay = true; 
+                var audio = new Audio();
+                audio.src = 'click.mp3';
+                audio.autoplay = true;
             }
         </script>
     </div>
@@ -37,7 +37,25 @@
     </div>
 
     <br>
+    <?php 
+        //  $conn = new mysqli("localhost", "eng_bd", "5]u1n(69Q7HIO!*u", "eng_bd");
+        //  $sql = "SELECT * FROM eng_basetask";
 
+        //  $link = trim($_REQUEST['link']);
+
+        //  $result = mysql_query($conn);
+        // $row = mysql_fetch_array($result);
+
+
+        // if($row)
+        // {
+        //     printf("<audio src=" " .$row['link'] . " " autoplay="autoplay"></audio></p>"
+        //     );
+        // }
+        // else{echo ("Пользователя с таким именем в базе нет<br/><br/>");}
+
+        //  $conn->close();
+         ?>
     <script src="Style/Style.js"></script>
 </body>
 
